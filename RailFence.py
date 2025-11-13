@@ -1,6 +1,6 @@
 class RailFence:
     @classmethod
-    def delete_spaces(sentence: str):
+    def delete_spaces(cls, sentence: str):
         no_spaces = ""
         for letter in sentence:
             not_space = letter.isalpha()
@@ -9,7 +9,7 @@ class RailFence:
         return no_spaces
 
     @staticmethod
-    def rail_fence_encription(to_encript: str):
+    def rail_fence_encryption(to_encript: str):
         without_spaces = RailFence.delete_spaces(to_encript)
         rail1 = ""
         rail2 = ""
@@ -21,11 +21,11 @@ class RailFence:
         return rail1 + rail2
     
     @staticmethod
-    def rail_fence_decription(encripted: str):
-        rail1 = encripted[:(len(encripted // 2)) + 1]
-        rail2 = encripted[(len(encripted // 2)) + 1:]
-        decripted_word = ""
+    def rail_fence_decryption(encrypted: str):
+        rail1 = encrypted[:(len(encrypted // 2)) + 1]
+        rail2 = encrypted[(len(encrypted // 2)) + 1:]
+        decrypted_word = ""
         for i in range(len(rail1)):
-            decripted_word += rail1[i]
-            decripted_word += rail2[i]
-        return decripted_word
+            decrypted_word += rail1[i]
+            decrypted_word += rail2[i]
+        return decrypted_word

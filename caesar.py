@@ -1,6 +1,6 @@
 class Caesar:
     @staticmethod
-    def caesar_cipher_encription(to_encript: str, hist: int = 2):
+    def caesar_cipher_encryption(to_encript: str, hist: int = 2):
         alphabet =["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
         encripted = ""
         for word in to_encript:
@@ -14,7 +14,7 @@ class Caesar:
         return encripted
 
     @staticmethod
-    def caesar_cipher_decription(encripted: str, hist: int = 2):
+    def caesar_cipher_decryption(encripted: str, hist: int = 2):
         decripted = ""    
         alphabet =["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
         for word in encripted:
