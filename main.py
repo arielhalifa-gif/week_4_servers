@@ -35,3 +35,7 @@ def encryption_text_by_fence(text: str):
 def decryption_text_by_fence(text: str):
     decrypted = RailFence.rail_fence_decryption(text)
     return {"decrypted": decrypted}
+
+
+if __name__ == "__main__":
+    uvicorn.run(app, host = "127.0.0.1", port = 8000)
